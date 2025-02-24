@@ -209,6 +209,7 @@ export class CKEditorComponent {
         console.log('Set ckeditor id to control id');
         if (elementId) {
             console.log('set..');
+            CKEDITOR.timestamp = new Date().getTime();
             element.id = elementId;
         }
         this.elementRef.nativeElement.appendChild(element);
