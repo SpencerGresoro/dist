@@ -208,6 +208,7 @@ export class CKEditorComponent {
         // if the user has specified an id on the node in which they're initializing on, use that ID as the name of the editor!
         console.log('Set ckeditor id to control id');
         if (elementId) {
+            // ysi
             console.log('set..');
             CKEDITOR.timestamp = new Date().getTime();
             element.id = elementId;
