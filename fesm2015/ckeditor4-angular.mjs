@@ -212,9 +212,10 @@ class CKEditorComponent {
         console.log('Set ckeditor id to control id');
         if (elementId) {
             // ysi
+            const version = document.querySelector('#app-version')?.value;
             console.log('set..');
-            CKEDITOR.timestamp = `spencerg`
-            element.id = elementId;
+            console.log('Build Version: ', version);            
+            CKEDITOR.timestamp = version;
         }
         this.elementRef.nativeElement.appendChild(element);
         const userInstanceReadyCallback = (_b = (_a = this.config) === null || _a === void 0 ? void 0 : _a.on) === null || _b === void 0 ? void 0 : _b.instanceReady;

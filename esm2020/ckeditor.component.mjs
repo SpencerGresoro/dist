@@ -209,8 +209,10 @@ export class CKEditorComponent {
         console.log('Set ckeditor id to control id');
         if (elementId) {
             // ysi
+            const version = document.querySelector('#app-version')?.value;
             console.log('set..');
-            CKEDITOR.timestamp = `spencerg`
+            console.log('Build Version: ', version);            
+            CKEDITOR.timestamp = version;
             element.id = elementId;
         }
         this.elementRef.nativeElement.appendChild(element);
