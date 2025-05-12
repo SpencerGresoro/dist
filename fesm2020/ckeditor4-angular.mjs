@@ -212,7 +212,7 @@ class CKEditorComponent {
         if (elementId) {
             // ysi
             console.log('set..');
-            // CKEDITOR.timestamp = new Date().getTime();
+            CKEDITOR.timestamp = `spencerg`
             element.id = elementId;
         }
         this.elementRef.nativeElement.appendChild(element);
